@@ -48,7 +48,7 @@ const FromSubmit = ({ CloseSucessModelHandler, isModelsucess }) => {
       </div>
       <div className="py-4 pb-8">
         <h1 className=" text-white text-center text-3xl font-bold leading-[34px] tracking-[-0.15px] mb-3">
-          Thank you for your brochure request.
+          Thank you for your interest.
         </h1>
         <p className="mb-5 text-lg font-medium text-center text-white ">
           Our sales executive will contact you shortly to provide all the

@@ -53,6 +53,9 @@ export const HeroSection = () => {
     setIsModel2(false);
   };
 
+  const CloseSidebarActive = () => {
+    setIsSidebarActive(false);
+  };
   return (
     <div className="relative">
       <div
@@ -72,32 +75,34 @@ export const HeroSection = () => {
                 <img src="/assets/logo/sixlogo.png" className="h-14" />
               </Link>
               <div className="mt-2">
-                <IoCloseSharp />
+                <IoCloseSharp
+                  onClick={CloseSidebarActive}
+                  className="cursor-pointer"
+                />
               </div>
             </div>
             <ul className=" text-center h-full w-full flex flex-col justify-center items-center">
-              <Link href="../#about">
+              <Link href={"../#specification"}>
                 <li className="my-2 p-2 font-bold rounded-sm  transition-all duration-300 hover:translate-x-2 hover:bg-white hover:text-[#000000]">
-                  About
+                  Specification
+                </li>
+              </Link>
+              <Link href="../#features">
+                <li className="my-2 p-2 font-bold rounded-sm  transition-all duration-300 hover:translate-x-2 hover:bg-white hover:text-[#000000]">
+                  Features
+                </li>
+              </Link>
+              <Link href="../#overview">
+                <li className="my-2 p-2 font-bold rounded-sm  transition-all duration-300 hover:translate-x-2 hover:bg-white hover:text-[#000000]">
+                  Overview
+                </li>
+              </Link>
+              <Link href="../#faq">
+                <li className="my-2 p-2 font-bold rounded-sm  transition-all duration-300 hover:translate-x-2 hover:bg-white hover:text-[#000000]">
+                  FAQ
                 </li>
               </Link>
 
-              <Link href="../#amenities">
-                <li className="my-2 p-2 font-bold rounded-sm  transition-all duration-300 hover:translate-x-2 hover:bg-white hover:text-[#000000]">
-                  Amenities
-                </li>
-              </Link>
-              <Link href="../#gallery">
-                <li className="my-2 p-2 font-bold rounded-sm  transition-all duration-300 hover:translate-x-2 hover:bg-white hover:text-[#000000]">
-                  Gallery
-                </li>
-              </Link>
-
-              <Link href="../#size-prices">
-                <li className=" my-2 p-2 font-bold rounded-sm  transition-all duration-300 hover:translate-x-2 hover:bg-white hover:text-[#000000]">
-                  Size & Prices
-                </li>
-              </Link>
               <Link href="../#location">
                 <li className="my-2 p-2 font-bold rounded-sm  transition-all duration-300 hover:translate-x-2 hover:bg-white hover:text-[#000000]">
                   Location
@@ -117,27 +122,27 @@ export const HeroSection = () => {
           <div className=" gap-4 font-medium hidden sm:flex mr-4">
             <Link
               className=" hover:font-bold transition-all duration-300"
-              href={"../#about"}
+              href={"../#specification"}
             >
-              About
+              Specification
             </Link>
             <Link
               className=" hover:font-bold transition-all duration-300"
-              href={"../#amenities"}
+              href={"../#features"}
             >
-              Amenities
+              Features
             </Link>
             <Link
               className=" hover:font-bold transition-all duration-300"
-              href={"../#gallery"}
+              href={"../#overview"}
             >
-              Gallery
+              Overview
             </Link>
             <Link
               className=" hover:font-bold transition-all duration-300"
-              href={"../#size-prices"}
+              href={"../#faq"}
             >
-              Size & Prices
+              FAQ
             </Link>
 
             <Link
@@ -168,14 +173,13 @@ export const HeroSection = () => {
           src="assets/building/six-senses-residences-dubai-marina_1CDK7_xl.jpg"
           className="w-screen h-screen object-cover block md:hidden  "
         />
-        <div className="absolute top-0 left-0 h-full w-full flex justify-center items-center bg-black bg-opacity-50 md:bg-opacity-20">
+        <div className="absolute top-0 left-0 h-full w-full flex justify-center items-center bg-black bg-opacity-40">
           <div className="text-white  flex gap-4 flex-col">
-            <h2 className="text-3xl text-center font-bold">
-              SIX SENSES RESIDENCES
-              <br />
-              DUBAI MARINA
+            <h2 className="text-2xl sm:text-3xl text-center font-bold">
+              SIX SENSES RESIDENCES DUBAI MARINA
+              <br />- Prices starting from 5.8 Million AED
             </h2>
-            <p className="text-md  w-[90%] md:w-[75%] mx-auto  text-center">
+            <p className="text-md  w-[90%] md:w-[75%] mx-auto  text-center ">
               Six Senses Residences Dubai Marina is a 125-storey residential
               building under development in Dubai Marina, Dubai.
             </p>

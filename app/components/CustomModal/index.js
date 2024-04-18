@@ -109,7 +109,7 @@ const CustomModal = ({ CloseModelHandler, setIsModel2 }) => {
                 ref={input}
                 type="text"
                 className="border-[#E2E8F0]   px-4 py-3  border-[1.5px] border-solid bg-white w-full outline-none placeholder:text-[#94A3B8] text-white text-sm leading-[22px] tracking-[0.14px] mt-[6px]"
-                placeholder="Enter your name"
+                placeholder="Enter Your Name"
                 onChange={(e) => {
                   setName(e.target.value);
                 }}
@@ -127,7 +127,7 @@ const CustomModal = ({ CloseModelHandler, setIsModel2 }) => {
               <input
                 type="email"
                 className="border-[#E2E8F0] px-4 py-3  border-[1.5px] border-solid bg-white w-full outline-none placeholder:text-[#94A3B8] text-white text-sm leading-[22px] tracking-[0.14px] mt-[6px]"
-                placeholder="Enter your Email"
+                placeholder="Enter Your Email"
                 onChange={(e) => {
                   setEmail(e.target.value);
                 }}
@@ -145,7 +145,7 @@ const CustomModal = ({ CloseModelHandler, setIsModel2 }) => {
               <input
                 type="tel"
                 className="border-[#E2E8F0] px-4 py-3  border-[1.5px] border-solid bg-white w-full outline-none placeholder:text-[#94A3B8] text-white text-sm leading-[22px] tracking-[0.14px] mt-[6px]"
-                placeholder="Enter your mobile number"
+                placeholder="Enter Your Mobile Number"
                 onChange={(e) => {
                   setPhone(e.target.value);
                 }}

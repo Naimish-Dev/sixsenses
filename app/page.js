@@ -1,3 +1,4 @@
+import FAQ from "./components/FAQ";
 import { HeroSection } from "./components/HeroSection";
 import LeftImg from "./components/LeftImg";
 import Location from "./components/Location";
@@ -7,14 +8,15 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 
 export default function Home() {
   return (
-    <GoogleAnalytics gaId="G-JTJP41290P">
-      <main>
-        <HeroSection />
-        <Specification />
-        <RightImg />
-        <LeftImg />
-        <Location />
-      </main>
-    </GoogleAnalytics>
+    <main>
+      <GoogleAnalytics gaId="G-JTJP41290P" />
+      <HeroSection />
+      <Specification />
+      <RightImg />
+      <LeftImg />
+      <FAQ />
+      <Location />
+    </main>
+    // </GoogleAnalytics>
   );
 }

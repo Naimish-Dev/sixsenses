@@ -7,7 +7,11 @@
     text-wrap: balance;
   }
 }
-
+* {
+  scroll-behavior: smooth;
+  scroll-snap-align: center;
+  scroll-margin-top: 50px;
+}
 .model-blur {
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(12px);

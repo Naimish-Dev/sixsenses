@@ -10,7 +10,7 @@ import { SiInstructure } from "react-icons/si";
 
 const Specification = () => {
   return (
-    <div className=" py-14 px-2 ">
+    <div className=" py-14 px-2 " id="specification">
       <h2 className="text-3xl text-black font-semibold text-center mb-10">
         BUILDING SPECIFICATIONS
       </h2>
