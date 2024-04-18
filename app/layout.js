@@ -15,6 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <link rel="icon" href="favicon.ico" />
       <Conact />
+
       <body className={inter.className}>{children}</body>
       <Footer />
     </html>
