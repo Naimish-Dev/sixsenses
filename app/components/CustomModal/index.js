@@ -1,10 +1,14 @@
+"use client";
+
 import React, { useRef, useState, useEffect, Fragment } from "react";
 import Link from "next/link";
 import { IoClose } from "react-icons/io5";
+import { useRouter } from "next/navigation";
 
 const CustomModal = ({ CloseModelHandler, setIsModel2 }) => {
   const input = useRef();
   const model = useRef();
+  const router = useRouter();
 
   const [isloading, setIsloading] = useState(false);
 
@@ -56,7 +60,7 @@ const CustomModal = ({ CloseModelHandler, setIsModel2 }) => {
         if (data.status === 200) {
           sessionStorage.setItem("Token", "true");
           CloseModelHandler();
-          setIsModel2(true);
+          router.push("/thankyou");
           setName("");
           setEmail("");
           setPhone("");

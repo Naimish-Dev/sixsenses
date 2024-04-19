@@ -58,8 +58,12 @@ export const HeroSection = () => {
   };
 
   useEffect(() => {
+    const token = sessionStorage.getItem("Token");
+
     setTimeout(() => {
-      setIsModel(true);
+      if (!token) {
+        setIsModel(true);
+      }
     }, 1000);
   }, []);
 

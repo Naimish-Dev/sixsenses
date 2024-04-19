@@ -2,10 +2,12 @@
 import React, { Fragment, useState } from "react";
 import FromSubmit from "./CustomModal/FromSubmit";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const Location = () => {
   const [isloading, setIsloading] = useState(false);
   const [isModel, setIsModel] = useState(false);
+  const router = useRouter();
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -28,7 +30,7 @@ const Location = () => {
         const data = await response.json();
         if (data.status === 200) {
           sessionStorage.setItem("Token", "true");
-          setIsModel(true);
+          router.push("/thankyou");
 
           setName("");
           setEmail("");
