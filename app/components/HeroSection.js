@@ -56,6 +56,13 @@ export const HeroSection = () => {
   const CloseSidebarActive = () => {
     setIsSidebarActive(false);
   };
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsModel(true);
+    }, 1000);
+  }, []);
+
   return (
     <div className="relative">
       <div

@@ -3,17 +3,16 @@ import { FaQrcode } from "react-icons/fa6";
 
 const FAQ = () => {
   return (
-    <div className=" py-14 px-2 " id="faq">
+    <div className=" py-14 pl-2 lg:pl-2 pr-2 bg-gray-200" id="faq">
       <h2 className="text-3xl text-black font-semibold text-center mb-10">
         Frequently Asked Questions
       </h2>
 
-      <div className="grid gap-4 gap-y-8 grid-cols-1 lg:grid-cols-2 ">
-        <div className="shadow-lg ">
+      <div className="grid gap-4 grid-cols-1 lg:grid-cols-2 ">
+        <div className="shadow-lg bg-white py-2">
           <div className="flex gap-4 p-4">
             <div className="text-white bg-black p-2 h-fit flex items-center justify-center">
               <FaQrcode />
-
             </div>
             <div>
               <h3 className="text-lg font-semibold">
@@ -28,11 +27,10 @@ const FAQ = () => {
             </div>
           </div>
         </div>
-        <div className="shadow-lg">
+        <div className="shadow-lg bg-white py-2">
           <div className="flex gap-4 p-4">
             <div className="text-white bg-black p-2 h-fit flex items-center justify-center">
               <FaQrcode />
-
             </div>
             <div>
               <h3 className="text-xl  font-semibold">
@@ -45,11 +43,10 @@ const FAQ = () => {
             </div>
           </div>
         </div>
-        <div className="shadow-lg">
+        <div className="shadow-lg bg-white py-2">
           <div className="flex gap-4 p-4">
             <div className="text-white bg-black p-2 h-fit flex items-center justify-center">
               <FaQrcode />
-
             </div>
             <div>
               <h3 className="text-xl  font-semibold">
@@ -62,11 +59,10 @@ const FAQ = () => {
           </div>
         </div>
 
-        <div className="shadow-lg">
+        <div className="shadow-lg bg-white py-2">
           <div className="flex gap-4 p-4">
             <div className="text-white bg-black p-2 h-fit flex items-center justify-center">
               <FaQrcode />
-
             </div>
             <div>
               <h3 className="text-xl  font-semibold">
@@ -81,11 +77,10 @@ const FAQ = () => {
           </div>
         </div>
 
-        <div className="shadow-lg">
+        <div className="shadow-lg bg-white py-2">
           <div className="flex gap-4 p-4">
             <div className="text-white bg-black p-2 h-fit flex items-center justify-center">
               <FaQrcode />
-
             </div>
             <div>
               <h3 className="text-xl  font-semibold">
@@ -102,11 +97,10 @@ const FAQ = () => {
           </div>
         </div>
 
-        <div className="shadow-lg">
+        <div className="shadow-lg bg-white py-2">
           <div className="flex gap-4 p-4">
             <div className="text-white bg-black p-2 h-fit flex items-center justify-center">
               <FaQrcode />
-
             </div>
             <div>
               <h3 className="text-xl  font-semibold">

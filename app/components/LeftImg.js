@@ -8,7 +8,7 @@ const LeftImg = () => {
         CONNECTED LIVING
       </h2>
       <div className="flex flex-wrap  gap-4  items-center justify-between">
-        <div className="flex flex-col w-full lg:w-[calc(50%_-_17px)] xl:w-[calc(40%_-_17px)] gap-4 font-normal break-words text-wrap order-2 lg:order-1">
+        <div className="flex flex-col w-full lg:w-[calc(50%_-_17px)] xl:w-[calc(40%_-_17px)] gap-8 md:gap-4 md:ml-4 font-normal break-words text-wrap order-2 lg:order-1">
           <p className="break-all">
             Explore unparalleled luxury at Select Six Senses Residences Dubai
             Marina, a masterpiece brought to life through the visionary
