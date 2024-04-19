@@ -40,11 +40,9 @@ const index = () => {
     };
   }, []);
 
-
-const CloseSucessModelHandler=()=>{
-        setIsSidebarActive(false);
-
-}
+  const CloseSucessModelHandler = () => {
+    setIsSidebarActive(false);
+  };
   return (
     <div>
       <div
@@ -71,11 +69,10 @@ const CloseSucessModelHandler=()=>{
               </div>
             </div>
             <ul className=" text-center h-full w-full flex flex-col justify-center items-center">
-              <Link
-                className=" hover:font-bold transition-all duration-300"
-                href={"../#specification"}
-              >
-                Specification
+              <Link href="../#specification">
+                <li className="my-2 p-2 font-bold rounded-sm  transition-all duration-300 hover:translate-x-2 hover:bg-white hover:text-[#000000]">
+                  Specification
+                </li>
               </Link>
               <Link href="../#features">
                 <li className="my-2 p-2 font-bold rounded-sm  transition-all duration-300 hover:translate-x-2 hover:bg-white hover:text-[#000000]">
