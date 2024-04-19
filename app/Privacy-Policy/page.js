@@ -150,7 +150,7 @@ const index = () => {
           </button>
         </div>
       </div>
-      <section className="min-h-[calc(100vh_-_102px)]  flex justify-center items-center dark:text-black bg-[#DBDFD7] ">
+      <section className="min-h-[calc(100vh_-_102px)]  flex justify-center items-center dark:text-black ">
         <div className="container max-w-screen-xl px-2 mx-auto py-14 md:px-8">
           <div>
             <h3 className="mb-5 text-4xl text-center font-extrabold">
